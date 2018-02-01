@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IFRAME TEST</title>
+  <meta http-equiv="X-UA-Compatible" content="chrome=1"/>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    #trello {
+      position: fixed;
+      top: 0;
+      border: none;
+      width: 100%;
+      height: calc(100% - 360px);
+    }
+    .plugin-board-bar {
+      position: fixed;
+      bottom: 0;
+      border: none;
+      right: 0;
+      width:  100%;
+      height: 360px;
+    }
+    .plugin-chrome-header {
+      align-items: center;
+      background: #EDEFF0;
+      border-radius: 4px 4px 0 0;
+      display: flex;
+      height: 3pc;
+      justify-content: space-between;
+      min-height: 3pc;
+    }
+    .plugin-chrome-content {
+      width: 100%;
+      display: block;
+      height: 320px;
+    }
+    #eyeson-body {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      background-color: #EDEFF0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 40px 0;
+      justify-content: flex-end;
+    }
+    #eyeson {
+      width: 512px;
+      height: 100%;
+      position: relative;
+      border: none;
+      background-color: #343434;
+    }
+  </style>
+</head>
+<body>
+  <div class="plugin-board-bar">
+    <div class="plugin-chrome-header">
+    </div>
+    <div class="plugin-chrome-content">
+      <div id="eyeson-body">
+        <iframe id="eyeson"
+                allow="microphone; camera"
+                allowfullscreen
+                src="https://gitlab.com"></iframe>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
